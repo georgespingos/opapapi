@@ -1,0 +1,78 @@
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\Tzoker.Results.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\Tzoker.Results.pdb
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\Antlr3.Runtime.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\EntityFramework.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\Microsoft.Web.Infrastructure.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\Newtonsoft.Json.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Net.Http.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Net.Http.Formatting.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Net.Http.WebRequest.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Helpers.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Http.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Http.WebHost.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Mvc.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Optimization.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Providers.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Razor.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.WebPages.Deployment.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.WebPages.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.WebPages.Razor.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\WebGrease.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\EntityFramework.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\Newtonsoft.Json.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Net.Http.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Net.Http.Formatting.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Net.Http.WebRequest.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Helpers.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Http.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Http.WebHost.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Mvc.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.Razor.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.WebPages.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.WebPages.Deployment.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\System.Web.WebPages.Razor.xml
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\obj\Debug\ResolveAssemblyReference.cache
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\obj\Debug\Tzoker.Results.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\obj\Debug\Tzoker.Results.pdb
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\Microsoft.Web.Mvc.dll
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\Tzoker.Results.XML
+D:\____NBG\dev.source\Tzoker.Results\Tzoker.Results\bin\App_Data\Tzoker.Results.XML
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\App_Data\Tzoker.Results.XML
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\Tzoker.Results.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\Tzoker.Results.pdb
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\Tzoker.Results.XML
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\Antlr3.Runtime.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\EntityFramework.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\Microsoft.Web.Infrastructure.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\Microsoft.Web.Mvc.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\Newtonsoft.Json.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Net.Http.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Net.Http.Formatting.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Net.Http.WebRequest.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Helpers.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Http.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Http.WebHost.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Mvc.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Optimization.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Providers.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Razor.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.WebPages.Deployment.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.WebPages.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.WebPages.Razor.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\WebGrease.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\Newtonsoft.Json.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Razor.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\EntityFramework.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Net.Http.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Net.Http.Formatting.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Net.Http.WebRequest.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Helpers.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Http.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Http.WebHost.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.Mvc.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.WebPages.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.WebPages.Deployment.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\bin\System.Web.WebPages.Razor.xml
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\obj\Debug\ResolveAssemblyReference.cache
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\obj\Debug\Tzoker.Results.dll
+D:\____NBG\dev.source\Tzoker.Results - Copy\Tzoker.Results\obj\Debug\Tzoker.Results.pdb
