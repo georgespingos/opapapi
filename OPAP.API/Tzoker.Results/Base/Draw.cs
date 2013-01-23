@@ -26,7 +26,7 @@ namespace Tzoker.Results.Base
 
             this.Prizes = new PrizeCategory[NumOfResults];
 
-            this.Date = Convert.ToDateTime(jsonVal.date.ToString());
+            this.Date = Lib.Helper.ToGreekDate(jsonVal.date.ToString());
 
             JArray jsonArr = JArray.Parse(Result.ToString()) as JArray;
 
@@ -35,5 +35,6 @@ namespace Tzoker.Results.Base
                 this.Prizes[i] = new PrizeCategory(jsonArr[i]);
             }
         }
+        
     }
 }

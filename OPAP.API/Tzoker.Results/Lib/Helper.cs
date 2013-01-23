@@ -31,7 +31,12 @@ namespace Tzoker.Results.Lib
             }
             return result;
         }
-
+        public static DateTime ToGreekDate(string Date)
+        {
+            string tmp = Date.Split(new char[] { ' ' })[1].ToString();
+            System.Globalization.CultureInfo GrCulture = new System.Globalization.CultureInfo("el-GR");
+            return Convert.ToDateTime(tmp, GrCulture);
+        }
        
     }
 }

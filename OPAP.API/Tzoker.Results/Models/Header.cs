@@ -21,13 +21,15 @@ namespace Tzoker.Results.Models
         {
             dynamic jsonVal = JValue.Parse(JSONResult);
             dynamic ResultHeader = jsonVal;
+
             this.DrawNumber = Convert.ToInt32(ResultHeader.header.drawNumber.ToString());
             this.Id = Convert.ToInt32(ResultHeader.header.id.ToString());
             this.Status = Convert.ToInt32(ResultHeader.header.status.ToString());
             this.TotalColumns = Convert.ToInt32(ResultHeader.header.totalColumns.ToString());
             this.TotalColumns1 = Convert.ToInt32(ResultHeader.header.totalColumns1.ToString());
             this.Results = ResultHeader.header.results.ToString();
-            this.DrawDate = Convert.ToDateTime(ResultHeader.date.ToString());
+            this.DrawDate = Lib.Helper.ToGreekDate(ResultHeader.date.ToString());
+
         }
     }
 }
