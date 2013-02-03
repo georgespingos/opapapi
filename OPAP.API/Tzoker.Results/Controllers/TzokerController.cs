@@ -20,7 +20,9 @@ namespace Tzoker.Results.Controllers
         [HttpGet]
         public Header GetSummary(int id)
         {
-            Header h = new Header(new Lib.Helper(id, TzokerDraw.URL).JsonResponse);
+            string JsonResponse = new Lib.Helper(id, TzokerDraw.URL).JsonResponse;
+            Header h = new Header(JsonResponse);
+            h.Insert<Header>(h);
             return h;
         }
         /// <summary>

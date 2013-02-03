@@ -41,19 +41,6 @@ namespace Tzoker.Results.Lib
             return Convert.ToDateTime(tmp, GrCulture);
         }
 
-        public MongoDatabase Database
-        {
-            get
-            {
-                return MongoDatabase.Create(GetMongoDbConnectionString());
-            }
-        }
-
-        private string GetMongoDbConnectionString()
-        {
-            return ConfigurationManager.AppSettings.Get("MONGOHQ_URL") ??
-                ConfigurationManager.AppSettings.Get("MONGOLAB_URI") ??
-                "mongodb://localhost/OpapDraws";
-        }
+ 
     }
 }

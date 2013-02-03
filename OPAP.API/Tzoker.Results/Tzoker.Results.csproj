@@ -142,6 +142,7 @@
     <Compile Include="Controllers\Super3Controller.cs" />
     <Compile Include="Controllers\TzokerController.cs" />
     <Compile Include="CustomHandlers\MongoCacheHandler.cs" />
+    <Compile Include="Dd\DbHelper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

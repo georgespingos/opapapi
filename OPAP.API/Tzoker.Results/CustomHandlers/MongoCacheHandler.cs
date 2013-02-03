@@ -12,7 +12,11 @@ namespace Tzoker.Results.CustomHandlers
     {
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-            string id = HttpUtility.ParseQueryString(request.RequestUri.Query).Get("id");
+            int id = Convert.ToInt32(request.GetRouteData().Values["id"].ToString());
+            string DrawType = request.GetRouteData().Values["Controller"].ToString();
+            string Action = request.GetRouteData().Values["Action"].ToString();
+            
+            
             return base.SendAsync(request, cancellationToken);
 
         }
