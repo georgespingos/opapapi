@@ -115,3 +115,9 @@ E:\dev\OPAP.API\OPAP.API\Tzoker.Results\bin\System.Web.WebPages.Razor.xml
 E:\dev\OPAP.API\OPAP.API\Tzoker.Results\obj\Debug\Tzoker.Results.csprojResolveAssemblyReference.cache
 E:\dev\OPAP.API\OPAP.API\Tzoker.Results\obj\Debug\Tzoker.Results.dll
 E:\dev\OPAP.API\OPAP.API\Tzoker.Results\obj\Debug\Tzoker.Results.pdb
+E:\dev\OPAP.API\OPAP.API\Tzoker.Results\bin\MongoDB.Bson.dll
+E:\dev\OPAP.API\OPAP.API\Tzoker.Results\bin\MongoDB.Driver.dll
+E:\dev\OPAP.API\OPAP.API\Tzoker.Results\bin\MongoDB.Bson.pdb
+E:\dev\OPAP.API\OPAP.API\Tzoker.Results\bin\MongoDB.Bson.xml
+E:\dev\OPAP.API\OPAP.API\Tzoker.Results\bin\MongoDB.Driver.pdb
+E:\dev\OPAP.API\OPAP.API\Tzoker.Results\bin\MongoDB.Driver.xml

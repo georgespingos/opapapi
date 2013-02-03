@@ -5,6 +5,8 @@ using System.Web;
 using System.Net;
 using System.IO;
 using Tzoker.Results.Base;
+using System.Configuration;
+using MongoDB.Driver;
 
 namespace Tzoker.Results.Lib
 {
@@ -31,12 +33,27 @@ namespace Tzoker.Results.Lib
             }
             return result;
         }
+
         public static DateTime ToGreekDate(string Date)
         {
             string tmp = Date.Split(new char[] { ' ' })[1].ToString();
             System.Globalization.CultureInfo GrCulture = new System.Globalization.CultureInfo("el-GR");
             return Convert.ToDateTime(tmp, GrCulture);
         }
-       
+
+        public MongoDatabase Database
+        {
+            get
+            {
+                return MongoDatabase.Create(GetMongoDbConnectionString());
+            }
+        }
+
+        private string GetMongoDbConnectionString()
+        {
+            return ConfigurationManager.AppSettings.Get("MONGOHQ_URL") ??
+                ConfigurationManager.AppSettings.Get("MONGOLAB_URI") ??
+                "mongodb://localhost/OpapDraws";
+        }
     }
 }

@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using Tzoker.Results.Models;
 using Newtonsoft.Json.Linq;
+using Tzoker.Results.Models.Base;
 
 namespace Tzoker.Results.Base
 {
-    public class Draw:IDraw
+    public class Draw : Entity, IDraw
     {
         public DateTime Date { get; set; }
         public Header Header { get; set; }
         public PrizeCategory[] Prizes { get; set; }
+
         public Draw(string Json, int NumOfResults)
         {
             ParseJson(Json, NumOfResults);

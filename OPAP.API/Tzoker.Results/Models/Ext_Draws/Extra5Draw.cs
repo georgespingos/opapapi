@@ -13,6 +13,7 @@ namespace Tzoker.Results.Models
         public Extra5Draw(string Json, int NumOfResults)
             : base(Json, NumOfResults)
         {
+            this.Header.Type = Models.Header.DrawType.Extra5;
         }
     }
 }

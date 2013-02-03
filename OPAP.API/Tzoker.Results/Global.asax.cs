@@ -9,6 +9,7 @@ using System.Web.Routing;
 using Newtonsoft.Json;
 using Tzoker.Results.Lib;
 using System.Web.Http.Description;
+using Tzoker.Results.CustomHandlers;
 
 namespace Tzoker.Results
 {
@@ -28,7 +29,8 @@ namespace Tzoker.Results
             BootstrapSupport.BootstrapBundleConfig.RegisterBundles(System.Web.Optimization.BundleTable.Bundles);
 
             var config = GlobalConfiguration.Configuration;
-            config.Services.Replace(typeof(IDocumentationProvider), new XmlCommentDocumentationProvider(HttpContext.Current.Server.MapPath("~/App_Data/Tzoker.Results.XML")));            
+            config.Services.Replace(typeof(IDocumentationProvider), new XmlCommentDocumentationProvider(HttpContext.Current.Server.MapPath("~/App_Data/Tzoker.Results.XML")));
+            GlobalConfiguration.Configuration.MessageHandlers.Add(new MongoCacheHandler());
         }
     }
 }

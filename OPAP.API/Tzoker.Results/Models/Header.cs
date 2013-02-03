@@ -3,11 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Newtonsoft.Json.Linq;
+using Tzoker.Results.Models.Base;
 
 namespace Tzoker.Results.Models
 {
-    public class Header
+    public class Header:Entity
     {
+        public enum DrawType
+        {
+            Extra5,
+            Proto,
+            Lotto,
+            Super3,
+            Tzoker
+        }
         public int Id { get; set; }
         public int DrawNumber { get; set; }
         public int ColumnPrice { get; set; }
@@ -16,6 +25,7 @@ namespace Tzoker.Results.Models
         public int TotalColumns1 { get; set; }
         public string Results { get; set; }
         public DateTime DrawDate { get; set; }
+        public DrawType Type { get; set; }
 
         public Header(string JSONResult)
         {

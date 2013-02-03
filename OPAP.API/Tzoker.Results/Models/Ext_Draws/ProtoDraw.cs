@@ -13,7 +13,7 @@ namespace Tzoker.Results.Models
         public ProtoDraw(string Json, int NumOfResults)
             : base(Json, NumOfResults)
         {
-            
+            this.Header.Type = Models.Header.DrawType.Proto;
         }
     }
 }

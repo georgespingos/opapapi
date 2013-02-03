@@ -43,6 +43,12 @@
     <Reference Include="Microsoft.Web.Mvc">
       <HintPath>..\packages\Mvc4Futures.4.0.20710.0\lib\net40\Microsoft.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.7\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.7\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -135,6 +141,7 @@
     <Compile Include="Controllers\ProtoController.cs" />
     <Compile Include="Controllers\Super3Controller.cs" />
     <Compile Include="Controllers\TzokerController.cs" />
+    <Compile Include="CustomHandlers\MongoCacheHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -143,6 +150,7 @@
     <Compile Include="Lib\Helper.cs" />
     <Compile Include="Lib\XmlCommentDocumentationProvider.cs" />
     <Compile Include="Models\ApiModel.cs" />
+    <Compile Include="Models\Base\Entity.cs" />
     <Compile Include="Models\CategoryId.cs" />
     <Compile Include="Models\Ext_Draws\Extra5Draw.cs" />
     <Compile Include="Models\Ext_Draws\LottoDraw.cs" />
@@ -272,7 +280,9 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />

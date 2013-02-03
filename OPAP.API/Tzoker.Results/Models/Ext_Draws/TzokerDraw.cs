@@ -14,7 +14,7 @@ namespace Tzoker.Results.Models
         public TzokerDraw(string Json, int NumOfResults)
             : base(Json,NumOfResults )
         {
-            
+            this.Header.Type = Models.Header.DrawType.Tzoker;
         }
     }
 }

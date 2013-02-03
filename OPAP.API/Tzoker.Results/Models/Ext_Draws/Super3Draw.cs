@@ -13,6 +13,7 @@ namespace Tzoker.Results.Models
         public Super3Draw(string Json, int NumOfResults)
             : base(Json, NumOfResults)
         {
+            this.Header.Type = Models.Header.DrawType.Super3;
         }
     }
 }
