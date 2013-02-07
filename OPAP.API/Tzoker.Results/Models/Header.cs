@@ -9,14 +9,7 @@ namespace Tzoker.Results.Models
 {
     public class Header:Entity
     {
-        public enum DrawType
-        {
-            Extra5,
-            Proto,
-            Lotto,
-            Super3,
-            Tzoker
-        }
+        
         public int Id { get; set; }
         public int DrawNumber { get; set; }
         public int ColumnPrice { get; set; }
@@ -25,9 +18,9 @@ namespace Tzoker.Results.Models
         public int TotalColumns1 { get; set; }
         public string Results { get; set; }
         public DateTime DrawDate { get; set; }
-        public DrawType Type { get; set; }
+        public string ResultType { get; private set; }
 
-        public Header(string JSONResult)
+        public Header(string JSONResult, DrawType _Type):base(_Type)
         {
             dynamic jsonVal = JValue.Parse(JSONResult);
             dynamic ResultHeader = jsonVal;
@@ -39,7 +32,7 @@ namespace Tzoker.Results.Models
             this.TotalColumns1 = Convert.ToInt32(ResultHeader.header.totalColumns1.ToString());
             this.Results = ResultHeader.header.results.ToString();
             this.DrawDate = Lib.Helper.ToGreekDate(ResultHeader.date.ToString());
-
+            this.ResultType = "Summary";
         }
     }
 }

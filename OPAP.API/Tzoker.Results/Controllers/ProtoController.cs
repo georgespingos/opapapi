@@ -19,7 +19,8 @@ namespace Tzoker.Results.Controllers
         [HttpGet]
         public Header GetSummary(int id)
         {
-            Header h = new Header(new Lib.Helper(id, ProtoDraw.URL).JsonResponse);
+            Header h = new Header(new Lib.Helper(id, ProtoDraw.URL).JsonResponse, Models.Base.Entity.DrawType.Proto);
+            h.Insert<Header>(h);
             return h;
         }
         /// <summary>
@@ -31,6 +32,7 @@ namespace Tzoker.Results.Controllers
         public Draw GetDetails(int id)
         {
             Draw d = new ProtoDraw(new Lib.Helper(id, ProtoDraw.URL).JsonResponse, ProtoDraw.NumOfResults);
+            d.Insert<Draw>(d);
             return d;
         }
     }

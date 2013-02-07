@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Collections.Generic;using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -19,7 +18,8 @@ namespace Tzoker.Results.Controllers
         [HttpGet]
         public Header GetSummary(int id)
         {
-            Header h = new Header(new Lib.Helper(id, Super3Draw.URL).JsonResponse);
+            Header h = new Header(new Lib.Helper(id, Super3Draw.URL).JsonResponse, Models.Base.Entity.DrawType.Super3);
+            h.Insert<Header>(h);
             return h;
         }
         /// <summary>
@@ -31,6 +31,7 @@ namespace Tzoker.Results.Controllers
         public Draw GetDetails(int id)
         {
             Draw d = new Super3Draw(new Lib.Helper(id, Super3Draw.URL).JsonResponse, Super3Draw.NumOfResults);
+            d.Insert<Draw>(d);
             return d;
         }
     }
