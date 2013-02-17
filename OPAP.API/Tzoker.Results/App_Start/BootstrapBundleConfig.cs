@@ -9,7 +9,8 @@ namespace BootstrapSupport
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/js").Include(
-                "~/Scripts/jquery-1.*",
+                "~/Scripts/jquery-{version}.js",
+                "~/Scripts/jquery-migrate-{version}.js",
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/jquery.validate.js",
                 "~/scripts/jquery.validate.unobtrusive.js",
@@ -17,10 +18,10 @@ namespace BootstrapSupport
                 ));
 
             bundles.Add(new StyleBundle("~/content/css").Include(
-                "~/Content/bootstrap.css"
-                ));
-            bundles.Add(new StyleBundle("~/content/css-responsive").Include(
-                "~/Content/bootstrap-responsive.css"
+                "~/Content/bootstrap.css",
+                "~/Content/body.css",
+                "~/Content/bootstrap-responsive.css",
+                "~/Content/bootstrap-mvc-validation.css"
                 ));
         }
     }
