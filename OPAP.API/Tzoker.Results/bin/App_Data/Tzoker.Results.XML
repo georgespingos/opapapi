@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tzoker.Results</name>
+    </assembly>
+    <members>
+        <member name="M:Tzoker.Results.Controllers.Super3Controller.GetSummary(System.Int32)">
+            <summary>
+            Returns the summary of the draw, including the winning numbers.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON with the summary of the draw</returns>
+        </member>
+        <member name="M:Tzoker.Results.Controllers.Super3Controller.GetDetails(System.Int32)">
+            <summary>
+            Returns detailed draw results for the given draw.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON draw details object</returns>
+        </member>
+        <member name="M:Tzoker.Results.Controllers.TzokerController.GetSummary(System.Int32)">
+            <summary>
+            Returns the summary of the draw, including the winning numbers.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON with the summary of the draw</returns>
+        </member>
+        <member name="M:Tzoker.Results.Controllers.TzokerController.GetDetails(System.Int32)">
+            <summary>
+            Returns detailed draw results for the given draw.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON draw details object</returns>
+        </member>
+        <member name="M:Tzoker.Results.Controllers.LottoController.GetSummary(System.Int32)">
+            <summary>
+            Returns the summary of the draw, including the winning numbers.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON with the summary of the draw</returns>
+        </member>
+        <member name="M:Tzoker.Results.Controllers.LottoController.GetDetails(System.Int32)">
+            <summary>
+            Returns detailed draw results for the given draw.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON draw details object</returns>
+        </member>
+        <member name="M:Tzoker.Results.Controllers.Extra5Controller.GetSummary(System.Int32)">
+            <summary>
+            Returns the summary of the draw, including the winning numbers.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON with the summary of the draw</returns>
+        </member>
+        <member name="M:Tzoker.Results.Controllers.Extra5Controller.GetDetails(System.Int32)">
+            <summary>
+            Returns detailed draw results for the given draw.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON draw details object</returns>
+        </member>
+        <member name="M:Tzoker.Results.Controllers.ProtoController.GetSummary(System.Int32)">
+            <summary>
+            Returns the summary of the draw, including the winning numbers.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON with the summary of the draw</returns>
+        </member>
+        <member name="M:Tzoker.Results.Controllers.ProtoController.GetDetails(System.Int32)">
+            <summary>
+            Returns detailed draw results for the given draw.
+            </summary>
+            <param name="id">The drawId as it appears on the ticket, eg: 1351</param>
+            <returns>JSON draw details object</returns>
+        </member>
+    </members>
+</doc>
