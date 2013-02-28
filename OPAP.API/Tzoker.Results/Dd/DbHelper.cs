@@ -49,8 +49,9 @@ namespace Tzoker.Results.Dd
             return Draws;
         }
 
-        public bool Exists (int DrawId,int DrawTypeValue,string ResultType)
+        public bool TryGet (int DrawId,int DrawTypeValue,string ResultType, out BsonDocument Draw)
         {
+            bool Result = false;
             var collection = this.GetCollection <BsonDocument>();
             
             var QryDrawId = Query.EQ("DrawNumber", DrawId);
@@ -59,9 +60,15 @@ namespace Tzoker.Results.Dd
             IMongoQuery[] QryArray = { QryDrawId, QryDrawTypeValue, QryResultType };
             var QryFinal = Query.And(QryArray);
 
-            var Result = collection.FindOneAs(typeof(BsonDocument), QryFinal);
+            var QryResult = collection.FindOneAs(typeof(BsonDocument), QryFinal);
+            Draw = (BsonDocument)QryResult;
 
-            return false;
+            if (QryResult != null)
+                Result = true;
+            else
+                Result = false;
+            
+            return Result;
         }
     }
 }
