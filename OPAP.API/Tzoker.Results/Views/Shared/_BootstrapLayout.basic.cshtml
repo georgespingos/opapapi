@@ -31,11 +31,10 @@
                         @Html.Navigation()
                         @foreach (var group in Model.GetApis())
                         {
-                            <li><a href=#@group.Key >
-                                @group.Key
-                            </a>
-                            </li>
+
+                            <li><a href=#@group.Key >@group.Key </a></li>
                         }
+                        <li><a href="#sample-div">API call</a> </li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -47,7 +46,7 @@
         <hr>
         <footer>
             <p>
-                &copy; GNSpngO$ @System.DateTime.Now.ToString("yyyy")</p>
+                &copy; <a href="mailto:gnsping@gmail.com">GNSpngO$</a> @System.DateTime.Now.ToString("yyyy")</p>
         </footer>
     </div>
     @Scripts.Render("~/js") @RenderSection("Scripts", required: false)
