@@ -9,11 +9,12 @@
         <h4>Update!</h4>
         XMLHttpRequests from any domain is now allowed. API response header is now set to <code>Access-Control-Allow-Origin: *</code>
     </div>
-
+    
     <div>
         <a>
             <h3>Live API call Test</h3>
         </a>
+        <hr />
         <h3 data-bind="text: apiCallUrl" id='APIurl'></h3>
         <div class="row">
             <div class="span3">
@@ -40,11 +41,13 @@
                 </select>
             </div>
             <div class="span3">
-                <input class="btn btn-primary" value="Call API" id='callAPI'>
+                <input class="btn btn-primary" value="Call API" id="callAPI">
             </div>
         </div>
 
     </div>
+
+    <hr />
 
     <h2>API Help</h2>
     @foreach (var group in Model.GetApis())
