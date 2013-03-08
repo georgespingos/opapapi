@@ -27,6 +27,7 @@ namespace BootstrapSupport
             bundles.Add(new StyleBundle("~/content/css-responsive").Include(
                 "~/Content/bootstrap-responsive.css"
                 ));
+            BundleTable.EnableOptimizations = false;
         }
     }
 }
