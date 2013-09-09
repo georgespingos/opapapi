@@ -31,6 +31,7 @@ namespace Tzoker.Results
             var config = GlobalConfiguration.Configuration;
             config.Services.Replace(typeof(IDocumentationProvider), new XmlCommentDocumentationProvider(HttpContext.Current.Server.MapPath("~/App_Data/Tzoker.Results.XML")));
             GlobalConfiguration.Configuration.MessageHandlers.Add(new MongoCacheHandler());
+            
         }
     }
 }

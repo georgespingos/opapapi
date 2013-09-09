@@ -2,17 +2,65 @@
 @{
     ViewBag.Title = "API Help";
 }
+@*@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryui")
+    <script type="text/javascript">
+        // Apply jQuery accordion widget.
+        $(function () { $(".accordion").accordion(); });
+        </script>
+}
 
 <div id="body" class="content-wrapper">
+<h2>API Help</h2>
 
 <div class="alert alert-info">
     <h4>Update!</h4>
     XMLHttpRequests from any domain is now allowed. API response header is now set to <code>Access-Control-Allow-Origin: *</code>  
-</div>
+    </div>
 
+    <div>
+        <a>
+            <h3>Live API call Test</h3>
+        </a>
+        <hr />
+        <div style="background-image: url(Images/URL_Bar.png); background-repeat: no-repeat; height: 80px;">
+            <h4 data-bind="text: apiCallUrl" id='APIurl' style="margin-left:145px;line-height:85px;"></h4>
+        </div>
+        <div class="row">
+            <div class="span3">
+                <select id="drawType" style="width: 100%" data-bind="value: drawType">
+                    <option>Tzoker</option>
+                    <option>Super3</option>
+                    <option>Extra5</option>
+                    <option>Lotto</option>
+                    <option>Proto</option>
+                </select>
+            </div>
+            <div class="span3">
+                <select id="drawResultType" style="width: 100%" data-bind="value: drawResultType">
+                    <option value="GetSummary">Summary</option>
+                    <option value="GetDetails">Detail</option>
+                </select>
+            </div>
+            <div class="span3">
+                <select id="drawId" style="width: 100%" data-bind="value: drawId">
+                    @for (int i = 1359; i <= 1369; i++)
+                    {
+                        <option value="@i" selected>Κλήρωση: @i</option>
+                    }
+                </select>
+            </div>
+            <div class="span3">
+                <input class="btn btn-primary" value="Call API" id="callAPI">
+            </div>
+        </div>
 
-    <h2>
-        API Help</h2>
+    </div>
+
+    <hr />
+
+    <h2>API Help</h2>
     @foreach (var group in Model.GetApis())
     {
         <a name=@group.Key href="#">
@@ -33,7 +81,8 @@
                             @foreach (var param in api.ParameterDescriptions)
                             {
                                 <p>
-                                    Parameter: <em>@param.Name</em> (@param.Source): @param.Documentation</p>
+                                    Parameter: <em>@param.Name</em> (@param.Source): @param.Documentation
+                                </p>
                             }
                         </div>
                     </div>
@@ -46,7 +95,7 @@
         <a href="#">
             <h3>API Sample call (javascript)</h3>
         </a>
-<pre class="code .pre-scrollable">
+        <pre class="code .pre-scrollable">
 $(function () {
     $("#callAjax").click(function () {
         $("#reultsDiv").empty();
@@ -63,5 +112,14 @@ $(function () {
         }
     });
 </pre>
+    </div>
+</div>
+<div class="modal hide fade">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;</button>
+        <h4 data-bind="text: apiCallUrl"></h4>
+    </div>
+    <div class="modal-body" id="result" style="white-space: pre;">
     </div>
 </div>
