@@ -22,7 +22,9 @@ namespace Tzoker.Results.CustomHandlers
             int DrawId = Convert.ToInt32(request.GetRouteData().Values["id"].ToString());
             string DrawType = request.GetRouteData().Values["Controller"].ToString();
             string ResultType = request.GetRouteData().Values["Action"].ToString().Remove(0, 3);
+// ReSharper disable SuggestUseVarKeywordEvident
             int DrawTypeValue = (int)Enum.Parse(typeof(Entity.DrawType), Enum.GetNames(typeof(Entity.DrawType)).Where(n => n == DrawType).FirstOrDefault());
+// ReSharper restore SuggestUseVarKeywordEvident
 
             if (d.TryGet(DrawId, DrawTypeValue, ResultType, out Draw))
                 return FetchFromCache(Draw);
