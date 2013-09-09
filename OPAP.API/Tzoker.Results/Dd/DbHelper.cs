@@ -43,9 +43,14 @@ namespace Tzoker.Results.Dd
 
         public MongoCollection GetCollection<T>() 
         {
-            MongoServer server = this.Server;
-            MongoDatabase db = server.GetDatabase(this.MongoDatabaseName);
-            MongoCollection<T> Draws = db.GetCollection<T>(this.MongoCollectionName);
+            var connectionstring = GetMongoDbConnectionString();
+            var mongoUrl = new MongoUrl(connectionstring);
+            var cl = new MongoClient(mongoUrl);
+            MongoServer srv = cl.GetServer();
+            var database = srv.GetDatabase(this.MongoDatabaseName);
+// ReSharper disable InconsistentNaming
+            MongoCollection<T> Draws = database.GetCollection<T>(this.MongoCollectionName);
+// ReSharper restore InconsistentNaming
             return Draws;
         }
 

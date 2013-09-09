@@ -332,7 +332,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>4210</DevelopmentServerPort>
+          <DevelopmentServerPort>3094</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:3296/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
