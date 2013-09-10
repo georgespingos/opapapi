@@ -47,7 +47,8 @@ namespace Tzoker.Results.Dd
             var mongoUrl = new MongoUrl(connectionstring);
             var cl = new MongoClient(mongoUrl);
             MongoServer srv = cl.GetServer();
-            var database = srv.GetDatabase(this.MongoDatabaseName);
+
+            var database = srv.GetDatabase(MongoUrl.Create(connectionstring).DatabaseName);
 // ReSharper disable InconsistentNaming
             MongoCollection<T> Draws = database.GetCollection<T>(this.MongoCollectionName);
 // ReSharper restore InconsistentNaming
