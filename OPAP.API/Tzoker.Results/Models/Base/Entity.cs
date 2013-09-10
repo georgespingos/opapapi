@@ -27,17 +27,6 @@ namespace Tzoker.Results.Models.Base
             this.Type = _Type;
         }
 
-        public void Insert(string Json)
-        {
-            DbHelper dbHelper = new DbHelper();
-            MongoServer server = dbHelper.Server;
-            MongoDatabase db = server.GetDatabase(dbHelper.MongoDatabaseName);
-            MongoCollection<BsonDocument> Draws = db.GetCollection<BsonDocument>(dbHelper.MongoCollectionName);
-
-            MongoDB.Bson.BsonDocument doc = MongoDB.Bson.Serialization.BsonSerializer.Deserialize<BsonDocument>(Json);
-            Draws.Insert(doc);
-        }
-
         public void Insert<T>(T t) where T : Entity
         {
             DbHelper dbHelper = new DbHelper();

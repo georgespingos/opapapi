@@ -13,13 +13,6 @@ namespace Tzoker.Results.Dd
 {
     public class DbHelper
     {
-        public String MongoDatabaseName
-        {
-            get
-            {
-                return ConfigurationManager.AppSettings.Get("MongoDatabaseName");
-            }
-        }
         public String MongoCollectionName
         {
             get
@@ -27,13 +20,7 @@ namespace Tzoker.Results.Dd
                 return ConfigurationManager.AppSettings.Get("MongoCollection");
             }
         }
-        public MongoServer Server
-        {
-            get
-            {
-                return MongoServer.Create(GetMongoDbConnectionString());
-            }
-        }
+        
         private string GetMongoDbConnectionString()
         {
             return ConfigurationManager.AppSettings.Get("MONGOHQ_URL") ??
