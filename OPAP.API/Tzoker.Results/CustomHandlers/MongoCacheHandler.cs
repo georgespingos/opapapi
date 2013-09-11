@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Formatting;
 using System.Web;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ using Tzoker.Results.Dd;
 using Tzoker.Results.Models.Base;
 using MongoDB.Bson;
 using MongoDB.Bson.IO;
+using Newtonsoft.Json;
 
 namespace Tzoker.Results.CustomHandlers
 {
@@ -35,6 +37,7 @@ namespace Tzoker.Results.CustomHandlers
         {
             var response = new HttpResponseMessage();
             response.Content = new StringContent(Draw.ToJson(new MongoDB.Bson.IO.JsonWriterSettings{ OutputMode = JsonOutputMode.Strict}));
+            //response.Content = new ObjectContent(typeof(object), Draw.ToJson(new MongoDB.Bson.IO.JsonWriterSettings { OutputMode = JsonOutputMode.Strict }),  Newtonsoft.Json.Formatting.Indented);
             response.StatusCode = System.Net.HttpStatusCode.OK;
 
             return Task<HttpResponseMessage>.Factory.StartNew(() => response);
