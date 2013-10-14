@@ -60,9 +60,18 @@
         @Html.Partial("_alerts") @RenderBody()
         <hr>
         <footer>
-            <p>
-                &copy; <a href="mailto:gnsping@gmail.com">GNSpngO$</a> @System.DateTime.Now.ToString("yyyy")
-            </p>
+            <div class="row">
+                <div class="span6">
+                    <p>
+                        &copy; <a href="mailto:gnsping@gmail.com">GNSpngO$</a> @System.DateTime.Now.ToString("yyyy")
+                    </p>
+        
+                 </div>
+                    <div class="span6" align="right">
+                        <span id="mashape-button" data-api="greece-opap-lottary-draw-numbers" data-name="gnsping" data-icon="1"></span>
+                        <script src="https://www.mashape.com/embed/button.js"></script>
+                    </div>
+                </div>
         </footer>
     </div>
     @Scripts.Render("~/js") @RenderSection("Scripts", required: false)
